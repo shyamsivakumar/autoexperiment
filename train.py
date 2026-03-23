@@ -175,7 +175,7 @@ def train():
     with torch.no_grad():
         x, y = get_batch('val', device)
         _, val_loss = model(x, y)
-    val_bpc = val_loss.item() / (B * T) * np.log(2)
+    val_bpc = val_loss.item() / np.log(2)
     print(f"Final val_bpc: {val_bpc:.6f}")
     
     # save

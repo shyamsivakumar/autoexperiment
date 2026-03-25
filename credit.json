@@ -1,1 +1,101 @@
-{}
+{
+  "learning_rate_changes": {
+    "attempts": 3,
+    "successes": 0,
+    "avg_delta": -0.1027873333333336,
+    "experiments": [
+      {
+        "exp": 1,
+        "change": "max_lr 1e-3 \u2192 3e-4",
+        "delta": -0.118,
+        "success": false
+      },
+      {
+        "exp": 9,
+        "change": "increased max_lr to 2e-3",
+        "delta": -0.1056130000000004,
+        "success": false
+      },
+      {
+        "exp": 10,
+        "change": "decreased max_lr to 5e-4",
+        "delta": -0.08474900000000041,
+        "success": false
+      }
+    ]
+  },
+  "architecture_changes": {
+    "attempts": 7,
+    "successes": 0,
+    "avg_delta": -0.07378785714285717,
+    "experiments": [
+      {
+        "exp": 2,
+        "change": "n_embd 256\u2192384",
+        "delta": -0.049,
+        "success": false
+      },
+      {
+        "exp": 3,
+        "change": "increased n_layer to 10",
+        "delta": -0.06637699999999969,
+        "success": false
+      },
+      {
+        "exp": 4,
+        "change": "decreased n_layer to 6",
+        "delta": -0.043410999999999866,
+        "success": false
+      },
+      {
+        "exp": 5,
+        "change": "increased n_head to 12",
+        "delta": -0.11683500000000002,
+        "success": false
+      },
+      {
+        "exp": 6,
+        "change": "decreased n_head to 4",
+        "delta": 0.0,
+        "success": false
+      },
+      {
+        "exp": 7,
+        "change": "increased n_embd to 320",
+        "delta": -0.20638700000000032,
+        "success": false
+      },
+      {
+        "exp": 8,
+        "change": "decreased n_embd to 192",
+        "delta": -0.03450500000000023,
+        "success": false
+      }
+    ]
+  },
+  "regularization_changes": {
+    "attempts": 3,
+    "successes": 1,
+    "avg_delta": -0.04978133333333323,
+    "experiments": [
+      {
+        "exp": 3,
+        "change": "dropout 0.0\u21920.1",
+        "delta": 0.008,
+        "success": true
+      },
+      {
+        "exp": 1,
+        "change": "increased dropout to 0.15",
+        "delta": -0.10856599999999972,
+        "success": false
+      },
+      {
+        "exp": 2,
+        "change": "decreased dropout to 0.05",
+        "delta": -0.04877799999999999,
+        "success": false
+      }
+    ]
+  }
+}

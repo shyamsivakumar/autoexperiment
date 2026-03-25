@@ -142,8 +142,8 @@ def train():
         'n_embd': 256,
         'n_head': 8,
         'n_layer': 8,
-        'attn_dropout': 0.0,
-        'mlp_dropout': 0.0,
+        'attn_dropout': 0.1,  # Added dropout
+        'mlp_dropout': 0.1,
         'embd_dropout': 0.0,
     }
     
